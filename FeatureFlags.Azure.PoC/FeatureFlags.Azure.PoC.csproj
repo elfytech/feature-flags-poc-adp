@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-FeatureFlags.Azure.PoC-2892B7CD-6137-4CB1-B0A7-1D28403A0F0F</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.2.2" />
+    <PackageReference Include="Azure.Identity" Version="1.7.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.2" />
+    <PackageReference Include="Microsoft.Azure.AppConfiguration.AspNetCore" Version="5.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.AzureAppConfiguration" Version="5.1.0" />
+    <PackageReference Include="Microsoft.FeatureManagement.AspNetCore" Version="2.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+</Project>

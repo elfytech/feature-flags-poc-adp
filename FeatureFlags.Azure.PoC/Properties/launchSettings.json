@@ -1,0 +1,30 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:31848",
+      "sslPort": 44347
+    }
+  },
+  "profiles": {
+    "FeatureFlags.Azure.PoC": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7143;http://localhost:5143",
+        "environmentVariables": {
+            "VaultUri": "https://featureflagsazurepocvaul.vault.azure.net/",
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+        "environmentVariables": {
+            "VaultUri": "https://featureflagsazurepocvaul.vault.azure.net/",
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        }
+    }
+  }
+}

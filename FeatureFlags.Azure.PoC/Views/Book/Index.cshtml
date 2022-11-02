@@ -1,0 +1,31 @@
+﻿@model List<Book>
+@{
+    ViewData["Title"] = "Books Review";
+}
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-responsive table-hover">
+    <tr>
+        <td>Id</td>
+        <td>Author</td>
+        <td>Title</td>
+        <td>Description</td>
+        <td>Rating</td>
+        <feature name="@nameof(FeatureFlags.Azure.PoC.Models.Enums.FeatureFlags.BrowserFilter)">
+            <td>Review Details</td>
+        </feature>
+    </tr>
+    @foreach (Book book in Model)
+    {
+        <tr>
+            <td>@book.Id</td>
+            <td>@book.Author</td>
+            <td>@book.Title</td>
+            <td>@book.Description</td>
+            <td>@book.ReviewDetails.Rating</td>
+            <feature name="@nameof(FeatureFlags.Azure.PoC.Models.Enums.FeatureFlags.BrowserFilter)">
+                <td>@Html.ActionLink("Click Here", "ReviewDetails", new { id = book.Id })</td>
+            </feature>
+        </tr>
+    }
+</table>
