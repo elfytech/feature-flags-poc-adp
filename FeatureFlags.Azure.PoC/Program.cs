@@ -52,7 +52,6 @@ builder.Services.AddTransient<IBookDataService, MockBookDataService>();
 
 builder.Services.AddFeatureManagement()
 				.UseDisabledFeaturesHandler(new CustomDisabledFeatureHandler())
-				.AddFeatureFilter<PercentageFilter>()
 				.AddFeatureFilter<TimeWindowFilter>()
 				.AddFeatureFilter<TargetingFilter>()
 				.AddFeatureFilter<BrowserFilter>();

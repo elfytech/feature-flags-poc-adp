@@ -11,7 +11,8 @@
         <td>Title</td>
         <td>Description</td>
         <td>Rating</td>
-        <feature name="@nameof(FeatureFlags.Azure.PoC.Models.Enums.FeatureFlags.BrowserFilter)">
+        <feature name="@nameof(FeatureFlags.Azure.PoC.Models.Enums.FeatureFlags.BrowserFilter), @nameof(FeatureFlags.Azure.PoC.Models.Enums.FeatureFlags.BookDetailReview)"
+                 requirement=All>
             <td>Review Details</td>
         </feature>
     </tr>
@@ -23,7 +24,8 @@
             <td>@book.Title</td>
             <td>@book.Description</td>
             <td>@book.ReviewDetails.Rating</td>
-            <feature name="@nameof(FeatureFlags.Azure.PoC.Models.Enums.FeatureFlags.BrowserFilter)">
+            <feature name="@nameof(FeatureFlags.Azure.PoC.Models.Enums.FeatureFlags.BrowserFilter), @nameof(FeatureFlags.Azure.PoC.Models.Enums.FeatureFlags.BookDetailReview)"
+                     requirement=All>
                 <td>@Html.ActionLink("Click Here", "ReviewDetails", new { id = book.Id })</td>
             </feature>
         </tr>

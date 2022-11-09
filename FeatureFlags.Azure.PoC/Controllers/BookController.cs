@@ -25,6 +25,7 @@ namespace FeatureFlags.Azure.PoC.Controllers
 
         [FeatureGate(nameof(Models.Enums.FeatureFlags.BookDetailReview))]
         [FeatureGate(nameof(Models.Enums.FeatureFlags.BrowserFilter))]
+        [FeatureGate(nameof(Models.Enums.FeatureFlags.TargetUsers))]
         public IActionResult ReviewDetails(string? id)
         {
             Book? book = _bookDataService.GetAllBookReviews().Find(p => p.Id.Equals(id));

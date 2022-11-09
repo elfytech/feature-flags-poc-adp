@@ -2,7 +2,6 @@
 {
 	public enum FeatureFlags
 	{
-		BookReview,
 		BookDetailReview,
 		BrowserFilter,
 		TargetUsers

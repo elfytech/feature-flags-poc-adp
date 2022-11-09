@@ -20,8 +20,4 @@
     <PackageReference Include="Microsoft.FeatureManagement.AspNetCore" Version="2.5.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
-
 </Project>
