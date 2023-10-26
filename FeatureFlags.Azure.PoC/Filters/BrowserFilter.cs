@@ -2,7 +2,7 @@
 
 namespace FeatureFlags.Azure.PoC.Filters
 {
-	[FilterAlias(nameof(Models.Enums.FeatureFlags.BrowserFilter))]
+    [FilterAlias(Constants.FeatureFlags.BrowserFilter)]
 	public class BrowserFilter : IFeatureFilter
 	{
 		private readonly IHttpContextAccessor _httpContextAccessor;
